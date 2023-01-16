@@ -1,0 +1,89 @@
+.best{
+    padding: 111px 0;
+    &__info{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        width: 470px;
+    }
+    &__subtitle{
+        padding-top: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__btn{
+        width: 200px;
+        height: 65px;
+        background: #F85A47;
+        box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+        transition: 0.6s all;
+        &:hover{
+            background-color: #FFFA00;
+        }
+    }
+    &__list{
+        padding-top: 50px;
+        display: flex;
+        column-gap: 50px;
+        list-style-type: none;
+        height: 40px;
+        align-items: center;
+    }
+    &__sections{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 26px;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover{
+            color: #F85A47;
+            border-bottom: solid #F85A47;
+        }
+    }
+    &__tabs{
+        padding-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(3, 370px);
+        grid-template-rows: 300px;
+        grid-auto-rows: 300px;
+        gap: 30px;
+    }
+    &__tabs-item{
+        box-sizing: border-box;
+        padding: 14px;
+        border-radius: 5px;
+        &-1{
+        background: url('../../img/best_deal_1.jpg') center center / cover no-repeat;
+        }
+        &-2{
+        background: url('../../img/best_deal_2.jpg') center center / cover no-repeat;
+        }
+        &-3{
+        background: url('../../img/best_deal_3.jpg') center center / cover no-repeat;
+        }
+    }
+    &__tabs-btn{
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        cursor: pointer;
+        &-featured{
+            width: 75px;
+            height: 26px;
+        } 
+        &-3d{
+            width: 28px;
+            height: 26px;
+        }
+    }
+}

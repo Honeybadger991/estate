@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/how';
+@import 'blocks/best';
+@import 'blocks/futured';
+@import 'blocks/loved';
+@import 'blocks/news';
+@import 'blocks/footer';
+
+@import 'base/media';

@@ -1,0 +1,138 @@
+.promo{
+    position: relative;
+    padding-top: 180px;
+    margin-bottom: 111px;
+    &__container{
+        ::after{
+            content: '';
+            position: absolute;
+            background: #BDCCFF;
+            top: 0;
+            left: 68%;
+            height: 100%;
+            width: 32%;
+            z-index: -1;
+        }
+    }
+    &__wrapper-grid{
+        display: flex;
+    }
+    &__content{
+        flex: 0 1 50%;
+        &-text{
+            padding-right: 84px;
+        }
+    }
+    &__name{
+        padding-top: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        color: #FF9900;
+        text-transform: uppercase;
+    }
+    &__title{
+        padding-top: 15px;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 1.35;
+        color: #000000;
+    }
+    &__slogan{
+        padding-top: 15px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 0.01em;
+        color: #31353B;
+    }
+    &__slider{
+        flex: 0 1 50%;
+    }
+    &__image{
+        img{
+            width: 100%;
+        }
+    }
+    &__form{
+        margin-top: 48px;
+        height: 86px;
+        margin-right: -188px;
+        position: relative;
+        display: flex;
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+    }
+    &__form-input{
+        height: 100%;
+        border: 1px solid #DADADA;
+        width: 100%;
+        padding-left: 74px;
+        background: #fff url('../../icons/promo_house.png') 33px 50% no-repeat;
+        font-weight: 700;
+        font-size: 20px;
+        color: #31353B; 
+        &::placeholder{
+            font-weight: 400;
+            font-size: 20px;
+            color: #31353B; 
+            opacity: 0.3;
+        }
+    }
+    &__form-button{
+        height: 100%;
+        width: 188px;
+        flex: 0 0 188px;
+        background: #F85A47;
+        border: none;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 23px;
+        letter-spacing: 0.01em;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.6s all;
+        &:hover{
+            background-color: #FFFA00;
+        }
+    }
+    &__partners-list{
+        padding-top: 14px;
+    }
+    &__partners-title{
+        font-size: 17px;
+        letter-spacing: 0.01em;
+        color: #31353B;
+    }
+    &__partners-wrapper{
+        width: 69%;
+        padding-top: 27px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    &__partners-item{
+        height: 20px;
+    }
+    &__socials{
+        position: fixed;
+        top: 36%;
+        right: 36px;
+        display: flex;
+        flex-direction: column;
+        width: 21px;
+        gap: 20px;
+    }
+    &__social{
+        svg{
+            width: 21px;
+            height: 21px;
+        }
+        &:hover{
+            svg path{
+                fill: #F85A47;
+            }
+        }
+
+    }
+}

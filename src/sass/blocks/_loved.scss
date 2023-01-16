@@ -1,0 +1,85 @@
+.loved{
+    padding: 100px 0;
+    &__title{
+        width: 570px;
+        min-height: 110px;
+    }
+    &__block{
+        padding-top: 53px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 370px;
+        gap: 30px;
+    }
+    &__item{
+        position: relative;
+        padding: 102px 72px 42px 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #EBEBEB;
+        border-radius: 10px;
+        &::before{
+            content: '★★★★★';
+            position: absolute;
+            top: 52px;
+            left: 38px;
+            color: yellow;
+        }
+        &:hover{
+            border: none;
+            box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222), 3px 44px 54px rgba(0, 0, 0, 0.08);
+        }
+    }
+    &__comment{
+        max-height: 160px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #333333;
+        overflow: hidden;
+    }
+    &__person{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #333333;
+    }
+    &__location{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #666666;
+    }
+    &__bottom{
+        margin-top: 85px;
+        padding: 0 30px;
+        display: flex;
+        gap: 20%;
+        align-items: center;
+    }
+    &__partners{
+        flex: 75%;
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            height: 20px;
+        }
+    }
+    &__call{
+        flex: 25%;
+        color: #333333;
+        a{
+            cursor: pointer;
+        }
+    }
+}
